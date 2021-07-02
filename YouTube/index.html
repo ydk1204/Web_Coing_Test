@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de7302ea83.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>YouTube Clone</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">YouTube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+     <!-- Video Player -->
+     <section class="player">
+        <video controls src="media/Wave.mp4"></video>
+      </section>
+
+    <!-- Video info & Up next -->
+    <div class="infoAndUpNext">
+        <!-- Video Info -->
+        <section class="info">
+          <!-- Metadata -->
+          <div class="metadata">
+            <ul class="hashtags">
+                <li>#CloneCoding</li>
+                <li>#CodingTest</li>
+                <li>#YDK</li>
+            </ul>
+            <div class="titleAndButton">
+              <span class="title clamp">
+                Clone Coding: YouTube Mobile Website 유튜브 모바일 웹사이트 따라
+                만들기 | 프론트엔드 개발자가 되기 위한 연습 과정, HTML and CSS,
+                JavaScript를 사용한 예제입니다.
+              </span>
+              <button class="moreBtn">
+                <i class="fas fa-caret-down"></i>
+              </button>
+            </div>
+            <span class="views">1M views 1 month ago</span>
+          </div>
+    <!-- Action -->
+    <ul class="actions">
+        <li>
+            <button><i class="active fas fa-thumbs-up"></i><span>1K</span></button>
+        </li>
+        <li><button>
+         <i class="fas fa-thumbs-down"></i>
+         <span>0</span>
+        </button></li>
+        <li><button>
+         <i class="fas fa-share"></i>
+         <span>Share</span>
+        </button></li>
+        <li><button>
+         <i class="fas fa-plus"></i>
+         <span>Save</span>
+        </button></li>
+        <li><button>
+         <i class="fas fa-flag"></i>
+         <span>Report</span>
+        </button></li>
+    </ul>
+    <!-- Channel Description -->
+    <div class="channel">
+        <div class="metadata">
+            <img src="img/totoro.jpg" alt="">
+            <div class="info">
+                <span class="name">코딩 by YDK</span>
+                <span class="subscribers">1M subscriber</span>
+         </div>
+        </div>
+        <button class="subscribe">subscribe</button>
+    </div>
+</section>
+
+<!-- Next Video -->
+<section class="upNext">
+    <span class="title">Up next</span>
+    <ul>
+        <li class="item">
+         <div class="img"><img src="img/totoro.jpg" alt=""></div>
+            <div class="itemInfo">
+                <span class="title">
+                 HTML과 CSS, JavaScript 기초를 쌓아 기본기를 다지고,
+                 향후 React를 배우기 위해 여러 프로젝트를 만들어본다.
+                </span>
+                <span class="name">
+                    코딩 by YDK
+                   </span>
+                <span class="views">
+                 72K views
+                </span>
+            </div>
+            <button class="moreBtn">
+             <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </li>
+        <li class="item">
+         <div class="img"><img src="img/totoro.jpg" alt=""></div>
+         <div class="itemInfo">
+             <span class="title">
+              프론트엔드에 대한 지식을 쌓고 시간이 된다면 백엔드 분야도
+              공부하자, 풀스택 개발자를 목표로 한다.
+             </span>
+             <span class="name">
+              코딩 by YDK
+             </span>
+             <span class="views">
+              25K views
+             </span>
+         </div>
+         <button class="moreBtn">
+          <i class="fas fa-ellipsis-v"></i>
+         </button>
+        </li>
+        <li class="item">
+         <div class="img"><img src="img/totoro.jpg" alt=""></div>
+         <div class="itemInfo">
+             <span class="title">
+              취업할려면 코딩 테스트도 준비해야되는데 프론트엔드 기본기를
+              다지고 준비하자, 백엔드는 코테 이후 공부한다.
+             </span>
+             <span class="name">
+              코딩 by YDK
+             </span>
+             <span class="views">
+              26K views
+             </span>
+         </div>
+         <button class="moreBtn">
+          <i class="fas fa-ellipsis-v"></i>
+         </button>
+        </li>
+    </ul>
+</section>
+   </div>
+</body>
+</html>
