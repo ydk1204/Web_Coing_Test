@@ -1,7 +1,8 @@
 :root {
-    --background--color: #000051;
+    --background--color: #4f9a94;
+    --hover-color: #80cbc4;
     --text-color: #f0f0f0;
-    --logo-color: #ffab00;
+    --logo-color: #002f6c;
 }
 
 body {
@@ -42,7 +43,7 @@ a {
 }
 
 .navbar__menu li:hover {
-    background-color: #ffab00;
+    background-color: var(--hover-color);
     border-radius: 4px;
 }
 
@@ -59,7 +60,7 @@ a {
 }
 
 .navbar__icons a:hover {
-    color: #ffab00;
+    color: var(--hover-color);
 }
 
 .navbar__toggleBtn {
@@ -67,7 +68,7 @@ a {
     position: absolute;
     right: 32px;
     font-size: 24px;
-    color: #ffab00;
+    color: #002f6c;
 }
 
 @media screen and (max-width: 768px) {
