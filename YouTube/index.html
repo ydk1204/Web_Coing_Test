@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/de7302ea83.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Teko:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <title>YouTube Clone</title>
@@ -16,18 +16,34 @@
     <!-- header -->
     <header>
         <div class="logo">
+            <i class="fas fa-bars"></i>
             <i class="fab fa-youtube"></i>
             <span class="title">YouTube</span>
         </div>
+        <div class="input__search">
+            <div class="search__box">
+                <input type="text">
+                <button class="key">
+                <i class="fas fa-keyboard"></i>
+                </button>
+            </div>
+            <button class="search"><i class="fas fa-search"></i></button>
+            <button class="mic"><i class="fas fa-microphone"></i></button>
+        </div>
         <div class="icons">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-ellipsis-v"></i>
+            <div class="icon__box">
+                <button><i class="fas fa-video"></i></button>
+                <button><i class="fas fa-th"></i></button>
+                <button><i class="fas fa-bell"></i></button>
+            </div>
+            <button><img src="img/totoro2.jpg" alt=""></button>
         </div>
     </header>
 
+<div class="primary">
      <!-- Video Player -->
      <section class="player">
-        <video controls src="media/Wave.mp4"></video>
+        <video class="video__player" controls src="media/Wave.mp4"></video>
       </section>
 
     <!-- Video info & Up next -->
@@ -36,11 +52,11 @@
         <section class="info">
           <!-- Metadata -->
           <div class="metadata">
-            <ul class="hashtags">
+            <!-- <ul class="hashtags">
                 <li>#CloneCoding</li>
                 <li>#CodingTest</li>
                 <li>#YDK</li>
-            </ul>
+            </ul> -->
             <div class="titleAndButton">
               <span class="title clamp">
                 Clone Coding: YouTube Mobile Website 유튜브 모바일 웹사이트 따라
@@ -51,9 +67,10 @@
                 <i class="fas fa-caret-down"></i>
               </button>
             </div>
-            <span class="views">1M views 1 month ago</span>
           </div>
-    <!-- Action -->
+<!-- Action -->
+    <div class="infoAndicons">
+        <span class="views">1M views 1 month ago</span>
     <ul class="actions">
         <li>
             <button><i class="active fas fa-thumbs-up"></i><span>1K</span></button>
@@ -64,36 +81,39 @@
         </button></li>
         <li><button>
          <i class="fas fa-share"></i>
-         <span>Share</span>
+         <span>공유</span>
         </button></li>
         <li><button>
          <i class="fas fa-plus"></i>
          <span>Save</span>
         </button></li>
         <li><button>
-         <i class="fas fa-flag"></i>
+            <i class="fas fa-ellipsis-h"></i>
          <span>Report</span>
         </button></li>
     </ul>
+    </div>
     <!-- Channel Description -->
     <div class="channel">
         <div class="metadata">
             <img src="img/totoro.jpg" alt="">
             <div class="info">
                 <span class="name">코딩 by YDK</span>
-                <span class="subscribers">1M subscriber</span>
+                <span class="subscribers">구독자 97명</span>
          </div>
         </div>
-        <button class="subscribe">subscribe</button>
+        <button class="subscribe">구독</button>
     </div>
 </section>
-
+</div>
+</div>
 <!-- Next Video -->
+<div class="secondary">
 <section class="upNext">
-    <span class="title">Up next</span>
+    <!-- <span class="title">Up next</span> -->
     <ul>
         <li class="item">
-         <div class="img"><img src="img/totoro.jpg" alt=""></div>
+         <div class="img"><img src="img/totoro3.jpg" alt=""></div>
             <div class="itemInfo">
                 <span class="title">
                  HTML과 CSS, JavaScript 기초를 쌓아 기본기를 다지고,
@@ -111,7 +131,7 @@
             </button>
         </li>
         <li class="item">
-         <div class="img"><img src="img/totoro.jpg" alt=""></div>
+         <div class="img"><img src="img/totoro3.jpg" alt=""></div>
          <div class="itemInfo">
              <span class="title">
               프론트엔드에 대한 지식을 쌓고 시간이 된다면 백엔드 분야도
@@ -129,7 +149,7 @@
          </button>
         </li>
         <li class="item">
-         <div class="img"><img src="img/totoro.jpg" alt=""></div>
+         <div class="img"><img src="img/totoro3.jpg" alt=""></div>
          <div class="itemInfo">
              <span class="title">
               취업할려면 코딩 테스트도 준비해야되는데 프론트엔드 기본기를
@@ -146,8 +166,42 @@
           <i class="fas fa-ellipsis-v"></i>
          </button>
         </li>
+        <li class="item">
+            <div class="img"><img src="img/totoro3.jpg" alt=""></div>
+            <div class="itemInfo">
+                <span class="title">
+                 쓸거 없음
+                </span>
+                <span class="name">
+                 코딩 by YDK
+                </span>
+                <span class="views">
+                 26K views
+                </span>
+            </div>
+            <button class="moreBtn">
+             <i class="fas fa-ellipsis-v"></i>
+            </button>
+           </li>
+           <li class="item">
+            <div class="img"><img src="img/totoro3.jpg" alt=""></div>
+            <div class="itemInfo">
+                <span class="title">
+                 공백
+                </span>
+                <span class="name">
+                 코딩 by YDK
+                </span>
+                <span class="views">
+                 26K views
+                </span>
+            </div>
+            <button class="moreBtn">
+             <i class="fas fa-ellipsis-v"></i>
+            </button>
+           </li>
     </ul>
-</section>
+    </section>
    </div>
 </body>
 </html>
